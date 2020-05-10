@@ -1,0 +1,158 @@
+[debug] [2020-05-10T16:33:06.623Z] ----------------------------------------------------------------------
+[debug] [2020-05-10T16:33:06.625Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2020-05-10T16:33:06.625Z] CLI Version:   8.2.0
+[debug] [2020-05-10T16:33:06.625Z] Platform:      darwin
+[debug] [2020-05-10T16:33:06.625Z] Node Version:  v10.16.0
+[debug] [2020-05-10T16:33:06.626Z] Time:          Sun May 10 2020 22:03:06 GMT+0530 (India Standard Time)
+[debug] [2020-05-10T16:33:06.626Z] ----------------------------------------------------------------------
+[debug] [2020-05-10T16:33:06.626Z] 
+[debug] [2020-05-10T16:33:06.638Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-10T16:33:06.638Z] > authorizing via signed-in user
+[debug] [2020-05-10T16:33:06.639Z] [iam] checking project covidtracker-7720e for permissions ["firebase.projects.get"]
+[debug] [2020-05-10T16:33:06.640Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-05-10T16:33:06.641Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-05-10T16:33:07.176Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 16:33:07 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-10T16:33:07.189Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/covidtracker-7720e:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-05-10T16:33:09.578Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 16:33:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1620","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-10T16:33:09.579Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/covidtracker-7720e  
+ 
+[debug] [2020-05-10T16:33:10.312Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 16:33:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-10T16:33:10.315Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/covidtracker-7720e/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[debug] [2020-05-10T16:33:11.830Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 10 May 2020 16:33:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  functions: Watching "/Users/chicmic/functions" for Cloud Functions...
+[debug] [2020-05-10T16:33:11.862Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-10T16:33:11.862Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-05-10T16:33:11.862Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-10T16:33:11.863Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: Assigning socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_906.sock 
+[debug] [2020-05-10T16:33:11.863Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: BUSY 
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-05-10T16:33:12.142Z] [runtime-status] [906] Functions runtime initialized. {"cwd":"/Users/chicmic/functions","node_version":"10.16.0"} 
+[debug] [2020-05-10T16:33:12.143Z] [runtime-status] [906] Disabled runtime features: undefined 
+[debug] [2020-05-10T16:33:12.147Z] [runtime-status] [906] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:33:12.148Z] [runtime-status] [906] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:12.152Z] [runtime-status] [906] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-10T16:33:12.208Z] [runtime-status] [906] Checked functions.config() {"config":{}} 
+[debug] [2020-05-10T16:33:12.209Z] [runtime-status] [906] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:12.210Z] [runtime-status] [906] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:33:12.210Z] [runtime-status] [906] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:12.210Z] [runtime-status] [906] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-10T16:33:12.551Z] [runtime-status] [906] initializeApp(DEFAULT) {"databaseURL":"https://covidtracker-7720e.firebaseio.com","storageBucket":"covidtracker-7720e.appspot.com","projectId":"covidtracker-7720e","credential":{"implicit":false,"projectId":"covidtracker-7720e","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCelSoR4j8Fzucq\n8dwzvQBQBxs20lN3gatC9CX/Pi2IsvpXkHRom9SJz9HA8K4rBurjskWa11IoG0tB\nUxrgQlL7uHp0YDMtBX2LRO/EUzz9cJCl6bPoyQDKD0K0jHKqDtsOPxO+wuEjHsUC\nd+1G7rzw/lMPG2vGpbNOrJkJL+vI6iZ/SnZhSPYraB4sEiQSF59LZc1jf/085J6V\nMauTGow3RkXyxJA4EjQgNXt56XXQyI0C8CNWkOpzXKZ5cci1NVAY/ap3+vrK2+BK\nKvyA3G4r8B+neCcHgbLQxn01bJUpY7+OivEpMoVg+oi1OyiCOPYTO1LRBSh3m7UW\nuBG4WJv7AgMBAAECggEAEs4WcIt3NL2dzQpkNeBuNo85K22Sh0Phpq1kChn59VFf\n/V08aKE9+V+i/HGt/Z0y4nBj76Ij9GyUJnlv4PMMexwbrUwxFWAmzIqOsiW6wEUG\nah5F/s9DIDLiEp3rBP6A/HX/ZeofH3aJHytQgE5UKnHGMK7sP2Cr3CL8fMnpeGgX\n+DdEcVIe+HvQifRDy+pNXNK0F9O/xEEtvxLgi91towiKz5E0wpViA/gWh9U3QhSo\nKVwrQIXZbLzvS+SIkt6YyV9BT59L0qZ67no6UDK2Es/k9SZ32mrVMCSjFB5GaDgw\nrBSYlW3fjq2WtsbBb9Euix47zoO8M0oyPP5+L5PR5QKBgQDR1vacG7uFqDuYwFBJ\nopufOEl9pSVBTJZFYT7hlrXPV8xI47J90a60Hpfxbr/1Jz15xMMxdgeCt/wWDVVZ\n4prYZ8j0lOWFrZZhcJdtWTJnECHZkfJxmQjX326qOVLNa6zDfCak1y1JarvJYL6i\nkB0hyTAS02JGQ3tI6ICVIVvGPwKBgQDBd667NJ5pMjIjCL5SAULOR8fnPNYLkrkL\nPXKg6smWEeL56M8ofmXaHvZZC/HQI4rnCSE/Q+63ciu1mg1+zVw0Q2VoVPC/JpVw\nuDwoUOOM0JpRLwVe9yur2sSSNvAb9GCAgHA72WA73INy+j7zIDjWmggfgL1T+wbs\n6D4igrqTRQKBgDiW6kbLS9UNu5TEOGLDUYis21ThFpz3lIb9ZMHdrQZPvS3jCh3Y\nUG8O2RcpMOdiP7f5ElLia8Aa8gbYba4h6HR3+L/M7+EPIUEB5jR9G5Sjyx0ruOBd\nzv64qNWLRANWCG9nqdxGk1X7TM1QI9kfWFvmL+rDyvr78+GDojmVl3RtAoGAbHj3\nLh1liCPNupjnZMEyPMhAS+VvOZPtTmEIiTK7Dfo/YdFnfRPJdY+QngK1dPbIpZsX\n2gnzqUVJPov+bw8jWGZFUEb3qKUwer/BcvVPcB9xtnz/rOw2vydsuXI2E+ZjyQi6\nZMQPUeDkjq3CZ7y0QZahYVBkVtbTXjckx2K2y2UCgYBeyk9nHjdSfO2tQ1lPsk02\nF0FiXp7i18SOsEtl6kxVp3B5aRDQbL1zhIlwbEHcQJb6YGhDvhk7GPhVcZxo9loi\n4ekesU+Xvb3apOR1q3YuSm/0RiIZaOCFuJ2m6S9aBAoiehaPGd3IXibODXHH1FPp\nWNXio/S6o1pM/Y8rkIIwkA==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ale0i@covidtracker-7720e.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[warn] ⚠  functions: The Realtime Database emulator is not running, so calls to Realtime Database will affect production.
+[info] ✔  functions[mapData]: http function initialized (http://localhost:5001/covidtracker-7720e/us-central1/mapData).
+[debug] [2020-05-10T16:33:12.621Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: IDLE 
+[debug] [2020-05-10T16:33:23.643Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-10T16:33:23.643Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-10T16:33:23.643Z] Accepted request GET /covidtracker-7720e/us-central1/mapData/geoJSON --> mapData
+[debug] [2020-05-10T16:33:23.647Z] [worker-pool] addWorker(mapData) 
+[debug] [2020-05-10T16:33:23.647Z] [worker-pool] Adding worker with key mapData, total=1 
+[debug] [2020-05-10T16:33:23.647Z] [worker-pool] submitWork(triggerId=mapData) 
+[debug] [2020-05-10T16:33:23.648Z] [worker-mapData-68f9fe71-9a52-4d2a-a82e-5cb1762773db]: Assigning socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_912.sock 
+[debug] [2020-05-10T16:33:23.648Z] [worker-mapData-68f9fe71-9a52-4d2a-a82e-5cb1762773db]: BUSY 
+[debug] [2020-05-10T16:33:23.939Z] [runtime-status] [912] Functions runtime initialized. {"cwd":"/Users/chicmic/functions","node_version":"10.16.0"} 
+[debug] [2020-05-10T16:33:23.941Z] [runtime-status] [912] Disabled runtime features: undefined 
+[debug] [2020-05-10T16:33:23.943Z] [runtime-status] [912] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:33:23.944Z] [runtime-status] [912] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:23.948Z] [runtime-status] [912] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-10T16:33:23.978Z] [runtime-status] [912] Checked functions.config() {"config":{}} 
+[debug] [2020-05-10T16:33:23.978Z] [runtime-status] [912] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:23.979Z] [runtime-status] [912] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:33:23.979Z] [runtime-status] [912] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:33:23.979Z] [runtime-status] [912] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-10T16:33:24.153Z] [runtime-status] [912] initializeApp(DEFAULT) {"databaseURL":"https://covidtracker-7720e.firebaseio.com","storageBucket":"covidtracker-7720e.appspot.com","projectId":"covidtracker-7720e","credential":{"implicit":false,"projectId":"covidtracker-7720e","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCelSoR4j8Fzucq\n8dwzvQBQBxs20lN3gatC9CX/Pi2IsvpXkHRom9SJz9HA8K4rBurjskWa11IoG0tB\nUxrgQlL7uHp0YDMtBX2LRO/EUzz9cJCl6bPoyQDKD0K0jHKqDtsOPxO+wuEjHsUC\nd+1G7rzw/lMPG2vGpbNOrJkJL+vI6iZ/SnZhSPYraB4sEiQSF59LZc1jf/085J6V\nMauTGow3RkXyxJA4EjQgNXt56XXQyI0C8CNWkOpzXKZ5cci1NVAY/ap3+vrK2+BK\nKvyA3G4r8B+neCcHgbLQxn01bJUpY7+OivEpMoVg+oi1OyiCOPYTO1LRBSh3m7UW\nuBG4WJv7AgMBAAECggEAEs4WcIt3NL2dzQpkNeBuNo85K22Sh0Phpq1kChn59VFf\n/V08aKE9+V+i/HGt/Z0y4nBj76Ij9GyUJnlv4PMMexwbrUwxFWAmzIqOsiW6wEUG\nah5F/s9DIDLiEp3rBP6A/HX/ZeofH3aJHytQgE5UKnHGMK7sP2Cr3CL8fMnpeGgX\n+DdEcVIe+HvQifRDy+pNXNK0F9O/xEEtvxLgi91towiKz5E0wpViA/gWh9U3QhSo\nKVwrQIXZbLzvS+SIkt6YyV9BT59L0qZ67no6UDK2Es/k9SZ32mrVMCSjFB5GaDgw\nrBSYlW3fjq2WtsbBb9Euix47zoO8M0oyPP5+L5PR5QKBgQDR1vacG7uFqDuYwFBJ\nopufOEl9pSVBTJZFYT7hlrXPV8xI47J90a60Hpfxbr/1Jz15xMMxdgeCt/wWDVVZ\n4prYZ8j0lOWFrZZhcJdtWTJnECHZkfJxmQjX326qOVLNa6zDfCak1y1JarvJYL6i\nkB0hyTAS02JGQ3tI6ICVIVvGPwKBgQDBd667NJ5pMjIjCL5SAULOR8fnPNYLkrkL\nPXKg6smWEeL56M8ofmXaHvZZC/HQI4rnCSE/Q+63ciu1mg1+zVw0Q2VoVPC/JpVw\nuDwoUOOM0JpRLwVe9yur2sSSNvAb9GCAgHA72WA73INy+j7zIDjWmggfgL1T+wbs\n6D4igrqTRQKBgDiW6kbLS9UNu5TEOGLDUYis21ThFpz3lIb9ZMHdrQZPvS3jCh3Y\nUG8O2RcpMOdiP7f5ElLia8Aa8gbYba4h6HR3+L/M7+EPIUEB5jR9G5Sjyx0ruOBd\nzv64qNWLRANWCG9nqdxGk1X7TM1QI9kfWFvmL+rDyvr78+GDojmVl3RtAoGAbHj3\nLh1liCPNupjnZMEyPMhAS+VvOZPtTmEIiTK7Dfo/YdFnfRPJdY+QngK1dPbIpZsX\n2gnzqUVJPov+bw8jWGZFUEb3qKUwer/BcvVPcB9xtnz/rOw2vydsuXI2E+ZjyQi6\nZMQPUeDkjq3CZ7y0QZahYVBkVtbTXjckx2K2y2UCgYBeyk9nHjdSfO2tQ1lPsk02\nF0FiXp7i18SOsEtl6kxVp3B5aRDQbL1zhIlwbEHcQJb6YGhDvhk7GPhVcZxo9loi\n4ekesU+Xvb3apOR1q3YuSm/0RiIZaOCFuJ2m6S9aBAoiehaPGd3IXibODXHH1FPp\nWNXio/S6o1pM/Y8rkIIwkA==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ale0i@covidtracker-7720e.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[debug] [2020-05-10T16:33:24.196Z] [runtime-status] [912] Trigger "mapData" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "mapData"
+[debug] [2020-05-10T16:33:24.196Z] [runtime-status] [912] triggerDefinition {"httpsTrigger":{},"name":"mapData","entryPoint":"mapData"} 
+[debug] [2020-05-10T16:33:24.196Z] [runtime-status] [912] Running mapData in mode HTTPS 
+[debug] [2020-05-10T16:33:24.199Z] [runtime-status] [912] Attempting to listen to socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_912.sock 
+[debug] [2020-05-10T16:33:24.203Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-10T16:33:24.235Z] [runtime-status] [912] Ephemeral server handling GET request 
+[debug] [2020-05-10T16:33:24.240Z] [runtime-status] [912] Ephemeral server survived. 
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout.setTimeout [as _onTimeout] (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23) {"user":"    at Timeout.setTimeout [as _onTimeout] (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23)"}
+[info] >      at ontimeout (timers.js:436:11) {"user":"    at ontimeout (timers.js:436:11)"}
+[info] >      at tryOnTimeout (timers.js:300:5) {"user":"    at tryOnTimeout (timers.js:300:5)"}
+[info] >      at listOnTimeout (timers.js:263:5) {"user":"    at listOnTimeout (timers.js:263:5)"}
+[info] >      at Timer.processTimers (timers.js:223:10) {"user":"    at Timer.processTimers (timers.js:223:10)"}
+[debug] [2020-05-10T16:34:24.202Z] [worker-mapData-68f9fe71-9a52-4d2a-a82e-5cb1762773db]: exited 
+[debug] [2020-05-10T16:34:24.202Z] [worker-mapData-68f9fe71-9a52-4d2a-a82e-5cb1762773db]: FINISHED 
+[debug] [2020-05-10T16:34:24.202Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-10T16:34:37.854Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-05-10T16:34:37.854Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-05-10T16:34:37.855Z] Accepted request GET /covidtracker-7720e/us-central1/mapData/geoJSON --> mapData
+[debug] [2020-05-10T16:34:37.855Z] [worker-pool] Cleaned up workers for mapData: 1 --> 0 
+[debug] [2020-05-10T16:34:37.857Z] [worker-pool] addWorker(mapData) 
+[debug] [2020-05-10T16:34:37.857Z] [worker-pool] Adding worker with key mapData, total=1 
+[debug] [2020-05-10T16:34:37.857Z] [worker-pool] submitWork(triggerId=mapData) 
+[debug] [2020-05-10T16:34:37.858Z] [worker-mapData-9ecb90b6-145c-44aa-be42-bfd359303cf0]: Assigning socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_914.sock 
+[debug] [2020-05-10T16:34:37.858Z] [worker-mapData-9ecb90b6-145c-44aa-be42-bfd359303cf0]: BUSY 
+[debug] [2020-05-10T16:34:38.141Z] [runtime-status] [914] Functions runtime initialized. {"cwd":"/Users/chicmic/functions","node_version":"10.16.0"} 
+[debug] [2020-05-10T16:34:38.143Z] [runtime-status] [914] Disabled runtime features: undefined 
+[debug] [2020-05-10T16:34:38.145Z] [runtime-status] [914] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:34:38.146Z] [runtime-status] [914] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:34:38.149Z] [runtime-status] [914] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-10T16:34:38.179Z] [runtime-status] [914] Checked functions.config() {"config":{}} 
+[debug] [2020-05-10T16:34:38.179Z] [runtime-status] [914] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:34:38.180Z] [runtime-status] [914] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:34:38.180Z] [runtime-status] [914] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:34:38.180Z] [runtime-status] [914] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-10T16:34:38.353Z] [runtime-status] [914] initializeApp(DEFAULT) {"databaseURL":"https://covidtracker-7720e.firebaseio.com","storageBucket":"covidtracker-7720e.appspot.com","projectId":"covidtracker-7720e","credential":{"implicit":false,"projectId":"covidtracker-7720e","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCelSoR4j8Fzucq\n8dwzvQBQBxs20lN3gatC9CX/Pi2IsvpXkHRom9SJz9HA8K4rBurjskWa11IoG0tB\nUxrgQlL7uHp0YDMtBX2LRO/EUzz9cJCl6bPoyQDKD0K0jHKqDtsOPxO+wuEjHsUC\nd+1G7rzw/lMPG2vGpbNOrJkJL+vI6iZ/SnZhSPYraB4sEiQSF59LZc1jf/085J6V\nMauTGow3RkXyxJA4EjQgNXt56XXQyI0C8CNWkOpzXKZ5cci1NVAY/ap3+vrK2+BK\nKvyA3G4r8B+neCcHgbLQxn01bJUpY7+OivEpMoVg+oi1OyiCOPYTO1LRBSh3m7UW\nuBG4WJv7AgMBAAECggEAEs4WcIt3NL2dzQpkNeBuNo85K22Sh0Phpq1kChn59VFf\n/V08aKE9+V+i/HGt/Z0y4nBj76Ij9GyUJnlv4PMMexwbrUwxFWAmzIqOsiW6wEUG\nah5F/s9DIDLiEp3rBP6A/HX/ZeofH3aJHytQgE5UKnHGMK7sP2Cr3CL8fMnpeGgX\n+DdEcVIe+HvQifRDy+pNXNK0F9O/xEEtvxLgi91towiKz5E0wpViA/gWh9U3QhSo\nKVwrQIXZbLzvS+SIkt6YyV9BT59L0qZ67no6UDK2Es/k9SZ32mrVMCSjFB5GaDgw\nrBSYlW3fjq2WtsbBb9Euix47zoO8M0oyPP5+L5PR5QKBgQDR1vacG7uFqDuYwFBJ\nopufOEl9pSVBTJZFYT7hlrXPV8xI47J90a60Hpfxbr/1Jz15xMMxdgeCt/wWDVVZ\n4prYZ8j0lOWFrZZhcJdtWTJnECHZkfJxmQjX326qOVLNa6zDfCak1y1JarvJYL6i\nkB0hyTAS02JGQ3tI6ICVIVvGPwKBgQDBd667NJ5pMjIjCL5SAULOR8fnPNYLkrkL\nPXKg6smWEeL56M8ofmXaHvZZC/HQI4rnCSE/Q+63ciu1mg1+zVw0Q2VoVPC/JpVw\nuDwoUOOM0JpRLwVe9yur2sSSNvAb9GCAgHA72WA73INy+j7zIDjWmggfgL1T+wbs\n6D4igrqTRQKBgDiW6kbLS9UNu5TEOGLDUYis21ThFpz3lIb9ZMHdrQZPvS3jCh3Y\nUG8O2RcpMOdiP7f5ElLia8Aa8gbYba4h6HR3+L/M7+EPIUEB5jR9G5Sjyx0ruOBd\nzv64qNWLRANWCG9nqdxGk1X7TM1QI9kfWFvmL+rDyvr78+GDojmVl3RtAoGAbHj3\nLh1liCPNupjnZMEyPMhAS+VvOZPtTmEIiTK7Dfo/YdFnfRPJdY+QngK1dPbIpZsX\n2gnzqUVJPov+bw8jWGZFUEb3qKUwer/BcvVPcB9xtnz/rOw2vydsuXI2E+ZjyQi6\nZMQPUeDkjq3CZ7y0QZahYVBkVtbTXjckx2K2y2UCgYBeyk9nHjdSfO2tQ1lPsk02\nF0FiXp7i18SOsEtl6kxVp3B5aRDQbL1zhIlwbEHcQJb6YGhDvhk7GPhVcZxo9loi\n4ekesU+Xvb3apOR1q3YuSm/0RiIZaOCFuJ2m6S9aBAoiehaPGd3IXibODXHH1FPp\nWNXio/S6o1pM/Y8rkIIwkA==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ale0i@covidtracker-7720e.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[debug] [2020-05-10T16:34:38.398Z] [runtime-status] [914] Trigger "mapData" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "mapData"
+[debug] [2020-05-10T16:34:38.398Z] [runtime-status] [914] triggerDefinition {"httpsTrigger":{},"name":"mapData","entryPoint":"mapData"} 
+[debug] [2020-05-10T16:34:38.398Z] [runtime-status] [914] Running mapData in mode HTTPS 
+[debug] [2020-05-10T16:34:38.402Z] [runtime-status] [914] Attempting to listen to socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_914.sock 
+[debug] [2020-05-10T16:34:38.405Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-05-10T16:34:38.439Z] [runtime-status] [914] Ephemeral server handling GET request 
+[debug] [2020-05-10T16:34:38.444Z] [runtime-status] [914] Ephemeral server survived. 
+[warn] ⚠  functions: Your function timed out after ~60s. To configure this timeout, see
+      https://firebase.google.com/docs/functions/manage-functions#set_timeout_and_memory_allocation.
+[info] >  /usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619 {"user":"/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619"}
+[info] >                  throw new Error("Function timed out."); {"user":"                throw new Error(\"Function timed out.\");"}
+[info] >                  ^ {"user":"                ^"}
+[info] >   {"user":""}
+[info] >  Error: Function timed out. {"user":"Error: Function timed out."}
+[info] >      at Timeout.setTimeout [as _onTimeout] (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23) {"user":"    at Timeout.setTimeout [as _onTimeout] (/usr/local/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:619:23)"}
+[info] >      at ontimeout (timers.js:436:11) {"user":"    at ontimeout (timers.js:436:11)"}
+[info] >      at tryOnTimeout (timers.js:300:5) {"user":"    at tryOnTimeout (timers.js:300:5)"}
+[info] >      at listOnTimeout (timers.js:263:5) {"user":"    at listOnTimeout (timers.js:263:5)"}
+[info] >      at Timer.processTimers (timers.js:223:10) {"user":"    at Timer.processTimers (timers.js:223:10)"}
+[debug] [2020-05-10T16:35:38.404Z] [worker-mapData-9ecb90b6-145c-44aa-be42-bfd359303cf0]: exited 
+[debug] [2020-05-10T16:35:38.404Z] [worker-mapData-9ecb90b6-145c-44aa-be42-bfd359303cf0]: FINISHED 
+[debug] [2020-05-10T16:35:38.404Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-05-10T16:36:48.349Z] File /Users/chicmic/functions/index.js changed, reloading triggers 
+[debug] [2020-05-10T16:36:48.514Z] File /Users/chicmic/functions/index.js changed, reloading triggers 
+[debug] [2020-05-10T16:36:48.697Z] File /Users/chicmic/functions/index.js changed, reloading triggers 
+[debug] [2020-05-10T16:36:49.701Z] [worker-pool] Shutting down IDLE worker (~diagnostic~) 
+[debug] [2020-05-10T16:36:49.702Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: FINISHING 
+[debug] [2020-05-10T16:36:49.702Z] [worker-pool] Cleaned up workers for mapData: 1 --> 0 
+[debug] [2020-05-10T16:36:49.711Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-05-10T16:36:49.712Z] [worker-pool] Adding worker with key ~diagnostic~, total=2 
+[debug] [2020-05-10T16:36:49.712Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-05-10T16:36:49.712Z] [worker-~diagnostic~-8841c1c5-ce77-4066-b6e6-3194aa9b6c8b]: Assigning socketPath: /var/folders/s0/n3txzt753_38wvp84rg0s4sr0000gp/T/fire_emu_915.sock 
+[debug] [2020-05-10T16:36:49.712Z] [worker-~diagnostic~-8841c1c5-ce77-4066-b6e6-3194aa9b6c8b]: BUSY 
+[debug] [2020-05-10T16:36:49.713Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: exited 
+[debug] [2020-05-10T16:36:49.713Z] [worker-~diagnostic~-5e92e018-c48a-4df9-9088-80c1e2776dee]: FINISHED 
+[debug] [2020-05-10T16:36:49.996Z] [runtime-status] [915] Functions runtime initialized. {"cwd":"/Users/chicmic/functions","node_version":"10.16.0"} 
+[debug] [2020-05-10T16:36:49.998Z] [runtime-status] [915] Disabled runtime features: undefined 
+[debug] [2020-05-10T16:36:50.000Z] [runtime-status] [915] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:36:50.001Z] [runtime-status] [915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:36:50.005Z] [runtime-status] [915] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-05-10T16:36:50.035Z] [runtime-status] [915] Checked functions.config() {"config":{}} 
+[debug] [2020-05-10T16:36:50.035Z] [runtime-status] [915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:36:50.036Z] [runtime-status] [915] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-05-10T16:36:50.036Z] [runtime-status] [915] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.1","resolution":"/Users/chicmic/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-05-10T16:36:50.036Z] [runtime-status] [915] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.11.0","resolution":"/Users/chicmic/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-05-10T16:36:50.202Z] [runtime-status] [915] initializeApp(DEFAULT) {"databaseURL":"https://covidtracker-7720e.firebaseio.com","storageBucket":"covidtracker-7720e.appspot.com","projectId":"covidtracker-7720e","credential":{"implicit":false,"projectId":"covidtracker-7720e","privateKey":"-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCelSoR4j8Fzucq\n8dwzvQBQBxs20lN3gatC9CX/Pi2IsvpXkHRom9SJz9HA8K4rBurjskWa11IoG0tB\nUxrgQlL7uHp0YDMtBX2LRO/EUzz9cJCl6bPoyQDKD0K0jHKqDtsOPxO+wuEjHsUC\nd+1G7rzw/lMPG2vGpbNOrJkJL+vI6iZ/SnZhSPYraB4sEiQSF59LZc1jf/085J6V\nMauTGow3RkXyxJA4EjQgNXt56XXQyI0C8CNWkOpzXKZ5cci1NVAY/ap3+vrK2+BK\nKvyA3G4r8B+neCcHgbLQxn01bJUpY7+OivEpMoVg+oi1OyiCOPYTO1LRBSh3m7UW\nuBG4WJv7AgMBAAECggEAEs4WcIt3NL2dzQpkNeBuNo85K22Sh0Phpq1kChn59VFf\n/V08aKE9+V+i/HGt/Z0y4nBj76Ij9GyUJnlv4PMMexwbrUwxFWAmzIqOsiW6wEUG\nah5F/s9DIDLiEp3rBP6A/HX/ZeofH3aJHytQgE5UKnHGMK7sP2Cr3CL8fMnpeGgX\n+DdEcVIe+HvQifRDy+pNXNK0F9O/xEEtvxLgi91towiKz5E0wpViA/gWh9U3QhSo\nKVwrQIXZbLzvS+SIkt6YyV9BT59L0qZ67no6UDK2Es/k9SZ32mrVMCSjFB5GaDgw\nrBSYlW3fjq2WtsbBb9Euix47zoO8M0oyPP5+L5PR5QKBgQDR1vacG7uFqDuYwFBJ\nopufOEl9pSVBTJZFYT7hlrXPV8xI47J90a60Hpfxbr/1Jz15xMMxdgeCt/wWDVVZ\n4prYZ8j0lOWFrZZhcJdtWTJnECHZkfJxmQjX326qOVLNa6zDfCak1y1JarvJYL6i\nkB0hyTAS02JGQ3tI6ICVIVvGPwKBgQDBd667NJ5pMjIjCL5SAULOR8fnPNYLkrkL\nPXKg6smWEeL56M8ofmXaHvZZC/HQI4rnCSE/Q+63ciu1mg1+zVw0Q2VoVPC/JpVw\nuDwoUOOM0JpRLwVe9yur2sSSNvAb9GCAgHA72WA73INy+j7zIDjWmggfgL1T+wbs\n6D4igrqTRQKBgDiW6kbLS9UNu5TEOGLDUYis21ThFpz3lIb9ZMHdrQZPvS3jCh3Y\nUG8O2RcpMOdiP7f5ElLia8Aa8gbYba4h6HR3+L/M7+EPIUEB5jR9G5Sjyx0ruOBd\nzv64qNWLRANWCG9nqdxGk1X7TM1QI9kfWFvmL+rDyvr78+GDojmVl3RtAoGAbHj3\nLh1liCPNupjnZMEyPMhAS+VvOZPtTmEIiTK7Dfo/YdFnfRPJdY+QngK1dPbIpZsX\n2gnzqUVJPov+bw8jWGZFUEb3qKUwer/BcvVPcB9xtnz/rOw2vydsuXI2E+ZjyQi6\nZMQPUeDkjq3CZ7y0QZahYVBkVtbTXjckx2K2y2UCgYBeyk9nHjdSfO2tQ1lPsk02\nF0FiXp7i18SOsEtl6kxVp3B5aRDQbL1zhIlwbEHcQJb6YGhDvhk7GPhVcZxo9loi\n4ekesU+Xvb3apOR1q3YuSm/0RiIZaOCFuJ2m6S9aBAoiehaPGd3IXibODXHH1FPp\nWNXio/S6o1pM/Y8rkIIwkA==\n-----END PRIVATE KEY-----\n","clientEmail":"firebase-adminsdk-ale0i@covidtracker-7720e.iam.gserviceaccount.com","httpClient":{"retry":{"maxRetries":4,"statusCodes":[503],"ioErrorCodes":["ECONNRESET","ETIMEDOUT"],"backOffFactor":0.5,"maxDelayInMillis":60000}}}} 
+[debug] [2020-05-10T16:36:50.245Z] [worker-~diagnostic~-8841c1c5-ce77-4066-b6e6-3194aa9b6c8b]: IDLE 
