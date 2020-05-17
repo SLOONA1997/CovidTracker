@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38B6D25679ED409EFD5702B0 /* Pods_CovidTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3ECA249605FC4889B0E5F28 /* Pods_CovidTracker.framework */; };
+		930074A024712B56003208EF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9300749F24712B56003208EF /* Info.plist */; };
 		931385EA2464707D004DFB86 /* GeoJsonFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931385E92464707D004DFB86 /* GeoJsonFeature.swift */; };
 		931385EC24647128004DFB86 /* Geomatry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931385EB24647128004DFB86 /* Geomatry.swift */; };
 		9322C1F824546B0700F85884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9322C1F724546B0700F85884 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		594862AB70CCCB1327AC4252 /* Pods-CovidTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracker.release.xcconfig"; path = "Target Support Files/Pods-CovidTracker/Pods-CovidTracker.release.xcconfig"; sourceTree = "<group>"; };
 		8FFB2B57A9B777EAFD35213B /* Pods-CovidTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidTracker.debug.xcconfig"; path = "Target Support Files/Pods-CovidTracker/Pods-CovidTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		9300749F24712B56003208EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		931385E92464707D004DFB86 /* GeoJsonFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJsonFeature.swift; sourceTree = "<group>"; };
 		931385EB24647128004DFB86 /* Geomatry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geomatry.swift; sourceTree = "<group>"; };
 		9322C1F424546B0700F85884 /* CovidTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 				9322C20C2454736000F85884 /* NetworkLayer */,
 				9322C20D2454739A00F85884 /* PresentationLayer */,
 				937B77862454A50600F5503B /* Resources */,
+				9300749F24712B56003208EF /* Info.plist */,
 				9322C20524546B0900F85884 /* Info.plist */,
 			);
 			path = CovidTracker;
@@ -392,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930074A024712B56003208EF /* Info.plist in Resources */,
 				9322C20424546B0900F85884 /* LaunchScreen.storyboard in Resources */,
 				937B77932454A58C00F5503B /* OpenSans-Bold.ttf in Resources */,
 				9322C20F2454872B00F85884 /* Assets.xcassets in Resources */,
